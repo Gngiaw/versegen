@@ -50,7 +50,6 @@ export default function VerseGen() {
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
       <Particles
         id="tsparticles"
-        init={particlesInit}
         options={{
           background: { color: "#000000" },
           particles: {
@@ -64,6 +63,7 @@ export default function VerseGen() {
         }}
         className="absolute top-0 left-0 w-full h-full z-0"
       />
+
 
       <div className="relative z-10 flex flex-col items-center justify-start p-6 space-y-6">
         <h1 className="text-4xl font-bold text-fuchsia-500 mt-4">VerseGen</h1>
