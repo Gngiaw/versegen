@@ -1,9 +1,9 @@
 // app/page.tsx
 'use client';
 import { useState } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import { Engine } from "tsparticles-engine";
+import Particles from "@tsparticles/react";
+import { loadFull } from "@tsparticles/engine";
+import type { Engine } from "@tsparticles/engine";
 
 export default function VerseGen() {
   const [lyrics, setLyrics] = useState("");
