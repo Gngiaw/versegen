@@ -2,7 +2,7 @@
 'use client';
 import { useState } from "react";
 import Particles from "@tsparticles/react";
-import { loadFull } from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
 import type { Engine } from "@tsparticles/engine";
 
 export default function VerseGen() {
@@ -43,7 +43,7 @@ export default function VerseGen() {
   };
 
   const particlesInit = async (main: Engine) => {
-    await loadFull(main);
+    await loadSlim(main);
   };
 
   return (
